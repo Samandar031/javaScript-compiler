@@ -181,11 +181,43 @@ btnKril.addEventListener("click", function (e) {
   }
   let lotin = kir.join("");
   console.log(lotin);
-  inputOne.value = lotin;
+  inputThree.value = lotin;
 });
 
 btnClear.addEventListener("click", function (k) {
   inputOne.value = "";
   inputTwo.value = "";
   inputThree.value = "";
+});
+
+// let inputClass = document.querySelector(".input-class");
+// btnAnim.addEventListener("click", function (x) {
+//   inputClass.style.flex =
+// });
+
+// let arr1 = document.querySelector("body"); //polniy elementlarni oladi
+// console.log(arr1);
+
+// let arr2 = document.documentElement; //tag tugi bilan oladi
+// console.log(arr2);
+
+// let arr3 = document.getElementsByClassName("box"); //ichidagi shu classlarni oladi
+// console.log(arr3);
+
+// let arr4 = document.getElementsByTagName(".btn");
+// console.log(arr4);
+
+//cREATING
+
+const header = document.querySelector(".box"); //qayerdan chiqishi
+
+const box = document.createElement("div");
+box.classList.add("ari");
+// box.textContent = "bu bizning diyor";
+box.innerHTML = `<p>bu bizning diyor</p> <button class="btn">boss</button>`;
+header.prepend(box.cloneNode(true));
+// header.prepend(box.cloneNode(false));
+
+header.addEventListener("click", function () {
+  document.querySelector(".box").remove();
 });
