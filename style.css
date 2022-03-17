@@ -1,0 +1,54 @@
+body {
+  background-color: rgb(63, 199, 63);
+  font-weight: 600;
+}
+
+.btn,
+.btn-1,
+.btn-2 {
+  padding: 10px 30px;
+  font-size: 15px;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  background-color: rgb(63, 199, 63);
+  border: 2px solid white;
+  margin: 20px 40px;
+}
+
+.box {
+  margin: 50px auto;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+}
+
+.box .input-2 {
+  width: 94%;
+}
+
+.input-class {
+  display: flex;
+  justify-content: center;
+}
+
+.name {
+  background-color: black;
+  margin: 10px;
+  padding: 10px;
+  width: 300px;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 15px;
+  background-color: rgb(63, 199, 63);
+  color: white;
+}
+
+.name::placeholder {
+  color: rgba(255, 255, 255, 0.664);
+}
+
+.btn-box {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
