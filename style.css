@@ -5,14 +5,17 @@ body {
 
 .btn,
 .btn-1,
-.btn-2 {
+.btn-lotin,
+.btn-clear,
+.btn-kril,
+.btn-anim {
   padding: 10px 30px;
   font-size: 15px;
   border-radius: 20px;
   border: none;
   color: white;
   background-color: rgb(63, 199, 63);
-  border: 2px solid white;
+  border: 3px solid white;
   margin: 20px 40px;
 }
 
@@ -37,7 +40,7 @@ body {
   margin: 10px;
   padding: 10px;
   width: 300px;
-  border: 2px solid rgb(255, 255, 255);
+  border: 3px solid rgb(255, 255, 255);
   border-radius: 15px;
   background-color: rgb(63, 199, 63);
   color: white;
@@ -50,5 +53,7 @@ body {
 .btn-box {
   width: 100vw;
   display: flex;
+  display: grid;
+  grid-template-columns: 100fr 100fr 100fr;
   justify-content: center;
 }
